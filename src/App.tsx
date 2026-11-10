@@ -23,7 +23,7 @@ export default function App() {
       <div className="relative flex-1">
         {/* overlay here */}
         <div className="absolute inset-0">
-          <OverlayScrollbarsComponent element="div" className="size-full" options={scrollOptions} events={scrollEvents}>
+          <OverlayScrollbarsComponent element="div" className="size-full bg-white dark:bg-zinc-900" options={scrollOptions} events={scrollEvents}>
             <AppContent />
           </OverlayScrollbarsComponent>
         </div>
