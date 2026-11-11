@@ -16,6 +16,21 @@ function getInitialTheme(): Theme {
     return document.documentElement.getAttribute("theme") === "light" ? "light" : "dark"
 }
 
+function applyTheme(theme: Theme) {
+    const root = document.documentElement
+
+    root.classList.add("disableTransitions")
+    root.setAttribute("theme", theme)
+
+    void window.getComputedStyle(root).color
+
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            root.classList.remove("disableTransitions")
+        })
+    })
+}
+
 export default function ThemeProvider({ children }: { children: ReactNode }) {
 
     const [theme, setTheme] = useState<Theme>(getInitialTheme)
@@ -29,7 +44,7 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
     }, [theme])
 
     useEffect(() => {
-        document.documentElement.setAttribute("theme", theme)
+        applyTheme(theme)
     }, [theme])
 
     const value = useMemo(() => ({ theme, toggleTheme }), [theme, toggleTheme])
