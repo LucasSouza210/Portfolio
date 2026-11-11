@@ -140,5 +140,10 @@ export const Translations = {
             en: "Switch to light mode",
             es: "Activar modo claro"
         },
+        ariaChangeLanguage: {
+            pt: "Alterar idioma",
+            en: "Change language",
+            es: "Cambiar idioma"
+        },
     }
 }

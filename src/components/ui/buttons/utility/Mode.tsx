@@ -14,7 +14,7 @@ export default function Mode() {
     const Icon = isLight ? FaRegSun : FaRegMoon
 
     return (
-        <UtilityButton label={line(isLight ? 'ariaSwitchToDark' : 'ariaSwitchToLight')} onClick={toggleTheme}>
+        <UtilityButton className="aspect-square lg:aspect-auto" label={line(isLight ? 'ariaSwitchToDark' : 'ariaSwitchToLight')} onClick={toggleTheme}>
             <Icon className="size-1/2" />
         </UtilityButton>
     )
