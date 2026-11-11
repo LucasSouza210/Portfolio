@@ -1,6 +1,6 @@
 export default function AppContent() {
     return (
-        <main className="relative flex flex-col min-h-full w-full overflow-x-hidden">
+        <main className="w-full min-h-full relative flex flex-col sm:items-center lg:items-start flex-1 overflow-x-hidden">
             {/* sections here */}
         </main>
     )
