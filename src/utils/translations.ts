@@ -129,4 +129,16 @@ export const Translations = {
             es: 'Enviar'
         },
     },
+    ariaLabels: {
+        ariaSwitchToDark: {
+            pt: "Ativar modo escuro",
+            en: "Switch to dark mode",
+            es: "Activar modo oscuro"
+        },
+        ariaSwitchToLight: {
+            pt: "Ativar modo claro",
+            en: "Switch to light mode",
+            es: "Activar modo claro"
+        },
+    }
 }

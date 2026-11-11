@@ -1,6 +1,5 @@
 import type { EventListeners, PartialOptions } from "overlayscrollbars"
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react"
-import useTheme from "./hooks/useTheme"
 import Header from "./components/layout/header/Header"
 import AppContent from "./components/layout/AppContent"
 
@@ -20,11 +19,8 @@ const scrollEvents: EventListeners = {
 }
 
 export default function App() {
-
-  const { toggleTheme } = useTheme()
-
   return (
-    <div className="w-full h-dvh flex flex-col" onDoubleClick={toggleTheme}>
+    <div className="w-full h-dvh flex flex-col">
       <div className="relative flex-1">
         {/* overlay here */}
         <div className="absolute inset-0">
