@@ -11,9 +11,7 @@ type IndicatorStyle = {
 
 export default function Nav() {
 
-    const navigation = useContext(NavigationContext)
-
-    const { activeSection, scrollToSection } = navigation!
+    const { activeSection, scrollToSection } = useContext(NavigationContext)!
 
     const navRef = useRef<HTMLDivElement>(null)
     const itemRefs = useRef<(HTMLAnchorElement | null)[]>([])

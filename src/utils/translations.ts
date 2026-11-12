@@ -172,5 +172,10 @@ export const Translations = {
             en: "Change language",
             es: "Cambiar idioma"
         },
+        ariaOpenMenu: {
+            pt: "Abrir menu",
+            en: "Open menu",
+            es: "Abrir menú"
+        },
     }
 }

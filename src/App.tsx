@@ -1,9 +1,11 @@
-import { useContext, useMemo } from "react"
+import { useContext, useEffect, useMemo } from "react"
 import type { EventListeners, PartialOptions } from "overlayscrollbars"
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react"
+import NavigationProvider, { NavigationContext } from "./contexts/NavigationProvider"
+import useOverlay from "./hooks/ui/useOverlay"
 import Header from "./components/layout/header/Header"
 import AppContent from "./components/layout/AppContent"
-import NavigationProvider, { NavigationContext } from "./contexts/NavigationProvider"
+import Overlay from "./components/layout/Overlay"
 
 const scrollOptions: PartialOptions = {
   overflow: { x: "hidden" },
@@ -20,6 +22,15 @@ function AppLayout() {
 
   const { setViewport } = navigation!
 
+  const { overlay } = useOverlay()
+
+  const overlayOpen = overlay !== null
+
+  const options = useMemo<PartialOptions>(() => ({
+    ...scrollOptions,
+    overflow: { x: "hidden", y: overlayOpen ? "hidden" : "scroll" },
+  }), [overlayOpen])
+
   const scrollEvents = useMemo<EventListeners>(() => ({
     initialized: (instance) => {
       const { viewport } = instance.elements()
@@ -28,12 +39,24 @@ function AppLayout() {
     },
   }), [setViewport])
 
+  useEffect(() => {
+    const root = document.documentElement
+
+    root.style.overflow = overlayOpen ? "hidden" : ""
+    root.style.overscrollBehaviorY = overlayOpen ? "none" : ""
+
+    return () => {
+      root.style.overflow = ""
+      root.style.overscrollBehaviorY = ""
+    }
+  }, [overlayOpen])
+
   return (
     <div className="w-full h-dvh flex flex-col">
       <div className="relative flex-1">
-        {/* overlay here */}
+        <Overlay />
         <div className="absolute inset-0">
-          <OverlayScrollbarsComponent element="div" className="size-full bg-page" options={scrollOptions} events={scrollEvents}>
+          <OverlayScrollbarsComponent element="div" className="size-full bg-page" options={options} events={scrollEvents}>
             <Header />
             <AppContent />
           </OverlayScrollbarsComponent>
