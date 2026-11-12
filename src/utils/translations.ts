@@ -1,4 +1,31 @@
 export const Translations = {
+    header: {
+        homeLink: {
+            pt: 'Início',
+            en: 'Home',
+            es: 'Inicio'
+        },
+        aboutLink: {
+            pt: 'Sobre',
+            en: 'About',
+            es: 'Acerca de'
+        },
+        projectsLink: {
+            pt: 'Projetos',
+            en: 'Projects',
+            es: 'Proyectos'
+        },
+        skillsLink: {
+            pt: 'Habilidades',
+            en: 'Skills',
+            es: 'Habilidades'
+        },
+        contactLink: {
+            pt: 'Contato',
+            en: 'Contact',
+            es: 'Contacto'
+        },
+    },
     hero: {
         greeting: {
             pt: 'Olá, eu sou',

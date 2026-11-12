@@ -8,6 +8,7 @@
 
 :root {
     color-scheme: light;
+    --header-height: 4rem;
 }
 
 [theme="dark"] {
@@ -46,4 +47,28 @@ body {
 
 .outfit-font {
     font-family: "Outfit", sans-serif;
+}
+
+@media (min-width: 640px) {
+    :root {
+        --header-height: 4.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --header-height: 4.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --header-height: 3.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        --header-height: 4rem;
+    }
 }

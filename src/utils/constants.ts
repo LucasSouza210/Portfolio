@@ -21,3 +21,26 @@ export const langOptions: { lang: Lang; label: string; flag: ComponentType<SVGPr
         flag: SP
     },
 ]
+
+export const navLinks = [
+    {
+        href: 'Home',
+        label: 'homeLink'
+    },
+    {
+        href: 'About',
+        label: 'aboutLink'
+    },
+    {
+        href: 'Projects',
+        label: 'projectsLink'
+    },
+    {
+        href: 'Skills',
+        label: 'skillsLink'
+    },
+    {
+        href: 'Contact',
+        label: 'contactLink'
+    },
+]

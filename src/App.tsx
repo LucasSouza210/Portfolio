@@ -1,7 +1,9 @@
+import { useContext, useMemo } from "react"
 import type { EventListeners, PartialOptions } from "overlayscrollbars"
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react"
 import Header from "./components/layout/header/Header"
 import AppContent from "./components/layout/AppContent"
+import NavigationProvider, { NavigationContext } from "./contexts/NavigationProvider"
 
 const scrollOptions: PartialOptions = {
   overflow: { x: "hidden" },
@@ -12,13 +14,20 @@ const scrollOptions: PartialOptions = {
   }
 }
 
-const scrollEvents: EventListeners = {
-  initialized: (instance) => {
-    instance.elements().viewport.classList.add("scroll-container", "scroll-smooth")
-  },
-}
+function AppLayout() {
 
-export default function App() {
+  const navigation = useContext(NavigationContext)
+
+  const { setViewport } = navigation!
+
+  const scrollEvents = useMemo<EventListeners>(() => ({
+    initialized: (instance) => {
+      const { viewport } = instance.elements()
+      viewport.classList.add("scroll-container", "scroll-smooth")
+      setViewport(viewport)
+    },
+  }), [setViewport])
+
   return (
     <div className="w-full h-dvh flex flex-col">
       <div className="relative flex-1">
@@ -31,5 +40,13 @@ export default function App() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <NavigationProvider>
+      <AppLayout />
+    </NavigationProvider>
   )
 }
