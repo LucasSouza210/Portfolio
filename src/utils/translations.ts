@@ -37,6 +37,11 @@ export const Translations = {
             en: 'Fullstack Developer | WEB',
             es: 'Desarrollador Fullstack | WEB'
         },
+        resume: {
+            pt: 'Currículo',
+            en: 'Resume',
+            es: 'Currículum'
+        },
         download: {
             pt: 'Baixar CV',
             en: 'Download CV',
@@ -155,6 +160,13 @@ export const Translations = {
             en: 'Send',
             es: 'Enviar'
         },
+    },
+    imageAlts: {
+        heroImageAlt: {
+            pt: 'Foto de Lucas Souza',
+            en: 'Photo of Lucas Souza',
+            es: 'Foto de Lucas Souza'
+        }
     },
     ariaLabels: {
         ariaSwitchToDark: {

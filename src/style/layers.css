@@ -28,6 +28,10 @@
     @apply cursor-pointer transition-all duration-200 ease-in-out text-[#695aad] hover:text-[#4f427d] dark:text-[#8c85bd] dark:hover:text-[#a7a4c7];
 }
 
+@utility text-action-inverse {
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-100 hover:text-white;
+}
+
 /* Backgrounds */
 
 @utility bg-page {
@@ -72,6 +76,10 @@
 
 @utility action-elevated {
     @apply cursor-pointer transition-all duration-200 ease-in-out bg-zinc-50 hover:bg-white dark:bg-zinc-900/50 dark:hover:bg-zinc-900/70 active:bg-zinc-100 dark:active:bg-zinc-900/90;
+}
+
+@utility action-brand {
+    @apply cursor-pointer transition-all duration-200 ease-in-out bg-indigo-500 hover:bg-[#5a5aeb] dark:hover:bg-[#7378f4] active:bg-indigo-600 dark:active:bg-indigo-400;
 }
 
 @utility action-layout {
