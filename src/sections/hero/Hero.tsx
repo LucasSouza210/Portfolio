@@ -4,8 +4,8 @@ import Content from "./components/content/Content";
 
 export default function Hero() {
     return (
-        <SectionContainer id="hero" center>
-            <div className="flex flex-col items-center gap-5">
+        <SectionContainer id="home">
+            <div className="flex-1 flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-between gap-5 sm:gap-5.5 md:gap-6">
                 <HeroImage />
                 <Content />
             </div>

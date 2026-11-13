@@ -189,5 +189,20 @@ export const Translations = {
             en: "Open menu",
             es: "Abrir menú"
         },
+        instagramLabel: {
+            pt: 'Instagram',
+            en: 'Instagram',
+            es: 'Instagram'
+        },
+        githubLabel: {
+            pt: 'GitHub',
+            en: 'GitHub',
+            es: 'GitHub'
+        },
+        emailLabel: {
+            pt: 'Enviar e-mail',
+            en: 'Send email',
+            es: 'Enviar correo electrónico'
+        }
     }
 }

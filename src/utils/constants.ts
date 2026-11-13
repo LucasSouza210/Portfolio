@@ -16,6 +16,7 @@ export type NavLink = {
 export type SocialLink = {
     icon: IconType
     href: string
+    label: string
     email: boolean
 }
 
@@ -39,27 +40,27 @@ export const langOptions: { lang: Lang; label: string; flag: ComponentType<SVGPr
 
 export const navLinks: NavLink[] = [
     {
-        href: 'Home',
+        href: 'home',
         label: 'homeLink',
         icon: TbHome
     },
     {
-        href: 'About',
+        href: 'about',
         label: 'aboutLink',
         icon: TbUser
     },
     {
-        href: 'Projects',
+        href: 'projects',
         label: 'projectsLink',
         icon: TbBriefcase
     },
     {
-        href: 'Skills',
+        href: 'skills',
         label: 'skillsLink',
         icon: TbCode
     },
     {
-        href: 'Contact',
+        href: 'contact',
         label: 'contactLink',
         icon: TbMail
     },
@@ -69,16 +70,19 @@ export const heroLinks = [
     {
         icon: FaInstagram,
         href: 'https://www.instagram.com/lucassz.fg/',
+        label: 'instagramLabel',
         email: false
     },
     {
         icon: FaGithub,
         href: 'https://github.com/LucasSouza210',
+        label: 'githubLabel',
         email: false
     },
     {
         icon: FaEnvelope,
         href: 'lucassouzafigueiredo17@gmail.com',
+        label: 'emailLabel',
         email: true
     }
 ]
