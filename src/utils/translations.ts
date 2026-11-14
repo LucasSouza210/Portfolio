@@ -33,9 +33,9 @@ export const Translations = {
             es: 'Hola, soy'
         },
         role: {
-            pt: 'Desenvolvedor Fullstack | WEB',
-            en: 'Fullstack Developer | WEB',
-            es: 'Desarrollador Fullstack | WEB'
+            pt: 'Desenvolvedor Fullstack',
+            en: 'Fullstack Developer',
+            es: 'Desarrollador Fullstack'
         },
         resume: {
             pt: 'Currículo',
@@ -79,6 +79,41 @@ export const Translations = {
             en: 'Integration',
             es: 'Integración'
         },
+        softSkillsTitle: {
+            pt: 'Habilidades pessoais',
+            en: 'Soft Skills',
+            es: 'Habilidades blandas'
+        },
+        communication: {
+            pt: 'Comunicação',
+            en: 'Communication',
+            es: 'Comunicación'
+        },
+        leadership: {
+            pt: 'Liderança',
+            en: 'Leadership',
+            es: 'Liderazgo'
+        },
+        teaching: {
+            pt: 'Didática',
+            en: 'Teaching',
+            es: 'Didáctica'
+        },
+        proactivity: {
+            pt: 'Proatividade',
+            en: 'Proactivity',
+            es: 'Proactividad'
+        },
+        collaboration: {
+            pt: 'Colaboração',
+            en: 'Collaboration',
+            es: 'Colaboración'
+        },
+        resilience: {
+            pt: 'Resiliência',
+            en: 'Resilience',
+            es: 'Resiliencia'
+        }
     },
     projects: {
         projectsTitle: {

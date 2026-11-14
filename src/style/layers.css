@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('overlayscrollbars/overlayscrollbars.css');
+
+@import "tailwindcss";
+
 /* Typography */
 
 @utility text-title {
@@ -9,27 +14,27 @@
 }
 
 @utility text-action {
-    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-500 hover:text-zinc-700 dark:text-zinc-300 dark:hover:text-zinc-100;
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-500 hover:text-zinc-700 active:text-zinc-700 dark:text-zinc-300 dark:hover:text-zinc-100 dark:active:text-zinc-100;
 }
 
 @utility text-action-muted {
-    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-400 hover:text-zinc-600 dark:text-zinc-400 dark:hover:text-zinc-200;
-}
-
-@utility text-action-group {
-    @apply transition-all duration-200 ease-in-out text-zinc-500 group-hover:text-zinc-700 dark:text-zinc-300 dark:group-hover:text-zinc-100;
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-400 hover:text-zinc-600 active:text-zinc-600 dark:text-zinc-400 dark:hover:text-zinc-200 dark:active:text-zinc-200;
 }
 
 @utility text-action-secondary {
-    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-600 hover:text-zinc-800 dark:text-zinc-200 dark:hover:text-white;
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-600 hover:text-zinc-800 active:text-zinc-800 dark:text-zinc-200 dark:hover:text-white dark:active:text-white;
 }
 
 @utility text-action-brand {
-    @apply cursor-pointer transition-all duration-200 ease-in-out text-[#695aad] hover:text-[#4f427d] dark:text-[#8c85bd] dark:hover:text-[#a7a4c7];
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-[#695aad] hover:text-[#4f427d] active:text-[#4f427d] dark:text-[#8c85bd] dark:hover:text-[#a7a4c7] dark:active:text-[#a7a4c7];
 }
 
 @utility text-action-inverse {
-    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-100 hover:text-white;
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-100 hover:text-white active:text-white;
+}
+
+@utility text-action-contrast {
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-zinc-500 hover:text-white active:text-white dark:text-zinc-300 dark:hover:text-black dark:active:text-black;
 }
 
 /* Backgrounds */
@@ -92,4 +97,8 @@
 
 @utility action-ghost {
     @apply cursor-pointer transition-all duration-200 ease-in-out bg-transparent hover:bg-zinc-100 active:bg-zinc-200/70 dark:hover:bg-zinc-900/50 dark:active:bg-zinc-900/80;
+}
+
+@utility action-contrast {
+    @apply cursor-pointer transition-all duration-200 ease-in-out bg-transparent hover:bg-zinc-500 active:bg-zinc-600 dark:hover:bg-zinc-300 dark:active:bg-zinc-200;
 }
