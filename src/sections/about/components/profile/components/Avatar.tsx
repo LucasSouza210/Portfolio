@@ -6,7 +6,7 @@ export default function Avatar() {
     const { line } = useTranslate()
 
     return (
-        <div className="w-40/100 max-w-30 aspect-square flex p-1.5 border rounded-full overflow-hidden bg-default border-default">
+        <div className="w-19/50 lg:w-0 lg:min-w-9/10 aspect-square flex p-1.5 md:p-1.75 lg:p-1.25 2xl:p-1.5 border rounded-full overflow-hidden bg-default border-default">
             <img src={avatar} alt={line('heroImageAlt')} className="size-full object-cover rounded-full border border-default" />
         </div>
     )

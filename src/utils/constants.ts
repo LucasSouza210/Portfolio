@@ -7,7 +7,7 @@ import { SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import BR from "../assets/flags/BR";
 import US from "../assets/flags/US";
 import SP from "../assets/flags/SP";
-import { FiBookOpen, FiFlag, FiMessageCircle, FiShield, FiTrendingUp, FiUsers } from "react-icons/fi";
+import { FiBookOpen, FiCheckCircle, FiFlag, FiMapPin, FiMessageCircle, FiShield, FiTrendingUp, FiUsers } from "react-icons/fi";
 
 export type NavLink = {
     href: string
@@ -25,6 +25,12 @@ export type SocialLink = {
 export type AboutSkill = {
     icon: IconType
     label: string
+}
+
+export type ProfileInfo = {
+    icon: IconType
+    label: string
+    status: boolean
 }
 
 export type ServiceItem = {
@@ -117,6 +123,19 @@ export const stackIcons: AboutSkill[] = [
         icon: SiTailwindcss,
         label: "Tailwind CSS"
     },
+]
+
+export const profileMeta: ProfileInfo[] = [
+    {
+        icon: FiMapPin,
+        label: 'Ceará, BR',
+        status: false
+    },
+    {
+        icon: FiCheckCircle,
+        label: 'status',
+        status: true
+    }
 ]
 
 export const services: ServiceItem[] = [

@@ -33,9 +33,9 @@ export const Translations = {
             es: 'Hola, soy'
         },
         role: {
-            pt: 'Desenvolvedor Fullstack',
-            en: 'Fullstack Developer',
-            es: 'Desarrollador Fullstack'
+            pt: 'Desenvolvedor Frontend',
+            en: 'Frontend Developer',
+            es: 'Desarrollador Frontend'
         },
         resume: {
             pt: 'Currículo',
@@ -53,6 +53,11 @@ export const Translations = {
             pt: 'Sobre',
             en: 'About',
             es: 'Sobre mí'
+        },
+        status: {
+            pt: 'Disponível',
+            en: 'Available',
+            es: 'Disponible'
         },
         bio: {
             pt: 'Sou um desenvolvedor apaixonado por criar soluções digitais que unem funcionalidade e design. Trabalho no desenvolvimento de aplicações modernas, intuitivas e eficientes, sempre buscando entregar a melhor experiência para o usuário.',
