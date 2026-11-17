@@ -15,7 +15,7 @@ export default function Mode() {
 
     return (
         <UtilityButton className="aspect-square lg:aspect-auto" label={line(isLight ? 'ariaSwitchToDark' : 'ariaSwitchToLight')} onClick={toggleTheme}>
-            <Icon className="size-1/2" />
+            <Icon className="size-4 xl:size-4.5 2xl:size-5" />
         </UtilityButton>
     )
 }

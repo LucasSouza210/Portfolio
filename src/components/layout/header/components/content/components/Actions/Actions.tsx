@@ -3,7 +3,7 @@ import Mode from "../../../../../../ui/buttons/utility/Mode";
 
 export default function Actions() {
     return (
-        <div className="hidden lg:flex items-center lg:gap-1 xl:gap-1.25 2xl:gap-1.5">
+        <div className="hidden lg:flex items-center lg:gap-2.5 xl:gap-3 2xl:gap-3.5">
             <Lang />
             <Mode />
         </div>

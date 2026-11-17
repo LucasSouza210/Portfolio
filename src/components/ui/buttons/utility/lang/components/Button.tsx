@@ -8,7 +8,7 @@ export default function Button({ toggle }: { toggle: () => void }) {
 
     return (
         <UtilityButton className="gap-1.25 sm:gap-1.5 md:gap-1.75 lg:gap-0 px-3.5 sm:px-4 md:px-4.5 lg:px-0" label="ariaChangeLanguage" onClick={toggle}>
-            <TbWorld className="size-3.5 sm:size-4 md:size-4.5 lg:size-3/5" />
+            <TbWorld className="size-3.5 sm:size-4 md:size-4.5 lg:size-4.5 xl:size-5 2xl:size-5.5" />
             <span className="block lg:hidden text-sm sm:text-[15px] md:text-base lg:text-[10px] xl:text-[11px] 2xl:text-xs tracking-wider leading-none uppercase">
                 {lang}
             </span>
