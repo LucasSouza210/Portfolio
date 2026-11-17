@@ -16,21 +16,24 @@ export default function useScrollSpy(
         const updateActiveSection = () => {
             frame = 0
 
+            const existingSectionIds = sectionIds.filter((sectionId) => document.getElementById(sectionId))
+
+            if (existingSectionIds.length === 0) return
+
             const viewportTop = viewport.getBoundingClientRect().top
             const headerHeight = headerRef.current?.offsetHeight ?? 0
             const activationLine = headerHeight + viewport.clientHeight * 0.3
             const isScrollable = viewport.scrollHeight > viewport.clientHeight
             const isAtBottom = viewport.scrollTop + viewport.clientHeight >= viewport.scrollHeight - 2
 
-            // a última seção (Contact) costuma ser curta e nunca chega na linha de ativação
             if (isScrollable && isAtBottom) {
-                setActiveSection(sectionIds[sectionIds.length - 1])
+                setActiveSection(existingSectionIds[existingSectionIds.length - 1])
                 return
             }
 
-            let currentSection = sectionIds[0]
+            let currentSection = existingSectionIds[0]
 
-            for (const sectionId of sectionIds) {
+            for (const sectionId of existingSectionIds) {
                 const element = document.getElementById(sectionId)
                 if (!element) continue
 
