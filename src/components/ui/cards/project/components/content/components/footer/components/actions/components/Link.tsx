@@ -1,0 +1,9 @@
+import { FiArrowUpRight } from "react-icons/fi";
+
+export default function Link({ url }: { url: string }) {
+    return (
+        <a href={url} className="size-8 flex items-center justify-center border rounded-full action-elevated border-action text-action" target="_blank" rel="noopener noreferrer">
+            <FiArrowUpRight className="size-3/5"/>
+        </a>
+    )
+}

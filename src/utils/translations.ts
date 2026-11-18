@@ -126,6 +126,26 @@ export const Translations = {
             en: 'Projects',
             es: 'Proyectos'
         },
+        movixyDescription: {
+            pt: 'Plataforma de entretenimento para explorar filmes, séries e artistas, consultar informações detalhadas e organizar conteúdos favoritos em listas personalizadas.',
+            en: 'An entertainment platform to explore movies, TV shows, and artists, discover detailed information, and organize favorite content into personalized lists.',
+            es: 'Plataforma de entretenimiento para explorar películas, series y artistas, consultar información detallada y organizar contenidos favoritos en listas personalizadas.'
+        },
+        comingSoon: {
+            pt: 'Em breve',
+            en: 'Coming soon',
+            es: 'Próximamente'
+        },
+        developmentDescription: {
+            pt: 'Estou preparando um novo projeto para integrar ao portfólio, com novidades e funcionalidades que serão apresentadas em breve. Volte em breve para conferir!',
+            en: 'I’m preparing a new project to add to my portfolio, featuring new ideas and features that will be revealed soon. Check back to see what’s coming!',
+            es: 'Estoy preparando un nuevo proyecto para añadir al portafolio, con novedades y funcionalidades que presentaré próximamente. ¡Vuelve pronto para descubrirlo!'
+        },
+        inDevelopment: {
+            pt: 'Em desenvolvimento',
+            en: 'In development',
+            es: 'En desarrollo'
+        },
     },
     skills: {
         skillsTitle: {

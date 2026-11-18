@@ -4,10 +4,12 @@ import type { IconType } from "react-icons"
 import { TbArrowsJoin, TbBrandGithub, TbBriefcase, TbCode, TbHeadset, TbHome, TbMail, TbUser } from "react-icons/tb"
 import { FaInstagram } from "react-icons/fa";
 import { SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { FiBookOpen, FiCheckCircle, FiFlag, FiMapPin, FiMessageCircle, FiShield, FiTrendingUp, FiUsers } from "react-icons/fi";
+import { JavaScript, TypeScript, MySQL, HTML5, CSS, React, ReactRouter, TailwindCSS, Nodejs, VisualStudioCode, Git, Vite, Figma } from "../assets/TechIcons"
 import BR from "../assets/flags/BR";
 import US from "../assets/flags/US";
 import SP from "../assets/flags/SP";
-import { FiBookOpen, FiCheckCircle, FiFlag, FiMapPin, FiMessageCircle, FiShield, FiTrendingUp, FiUsers } from "react-icons/fi";
+import movixyPreview from "../assets/images/projects/movixy-preview.png"
 
 export type NavLink = {
     href: string
@@ -41,6 +43,23 @@ export type ServiceItem = {
 export type PersonalSkill = {
     title: string
     icon: IconType
+}
+
+export type Tech = {
+    key: string
+    name: string
+    icon: ComponentType<SVGProps<SVGSVGElement>>
+    link: string
+}
+
+export type Project = {
+    name: string
+    desc: string
+    tech: string[]
+    preview: string
+    url: string
+    git: string
+    soon?: boolean
 }
 
 export const langOptions: { lang: Lang; label: string; flag: ComponentType<SVGProps<SVGSVGElement>> }[] = [
@@ -177,5 +196,121 @@ export const personalSkills: PersonalSkill[] = [
     {
         title: "resilience",
         icon: FiShield
+    }
+]
+
+export const techs: Record<'front' | 'back' | 'tools', Tech[]> = {
+    front: [
+        {
+            key: 'js',
+            name: 'JavaScript',
+            icon: JavaScript,
+            link: 'https://tc39.es/ecma262/',
+        },
+        {
+            key: 'ts',
+            name: 'TypeScript',
+            icon: TypeScript,
+            link: 'https://www.typescriptlang.org/',
+        },
+        {
+            key: 'react',
+            name: 'React',
+            icon: React,
+            link: 'https://react.dev/',
+        },
+        {
+            key: 'router',
+            name: 'React Router',
+            icon: ReactRouter,
+            link: 'https://reactrouter.com/',
+        },
+        {
+            key: 'tw',
+            name: 'Tailwind CSS',
+            icon: TailwindCSS,
+            link: 'https://tailwindcss.com/',
+        },
+        {
+            key: 'html',
+            name: 'HTML',
+            icon: HTML5,
+            link: 'https://html.spec.whatwg.org/',
+        },
+        {
+            key: 'css',
+            name: 'CSS',
+            icon: CSS,
+            link: 'https://www.w3.org/Style/CSS/Overview.en.html',
+        },
+    ],
+    back: [
+        {
+            key: 'node',
+            name: 'Node.js',
+            icon: Nodejs,
+            link: 'https://nodejs.org/en',
+        },
+        {
+            key: 'mysql',
+            name: 'MySQL',
+            icon: MySQL,
+            link: 'https://www.mysql.com/',
+        },
+    ],
+    tools: [
+        {
+            key: 'vsc',
+            name: 'VS Code',
+            icon: VisualStudioCode,
+            link: 'https://code.visualstudio.com/',
+        },
+        {
+            key: 'git',
+            name: 'Git',
+            icon: Git,
+            link: 'https://git-scm.com/',
+        },
+        {
+            key: 'vite',
+            name: 'Vite',
+            icon: Vite,
+            link: 'https://vite.dev/',
+        },
+        {
+            key: 'figma',
+            name: 'Figma',
+            icon: Figma,
+            link: 'https://www.figma.com/',
+        },
+    ],
+}
+
+export const projects: Project[] = [
+    {
+        name: 'Movixy',
+        desc: 'movixyDescription',
+        tech: ['ts', 'react', 'tw'],
+        preview: movixyPreview,
+        url: 'https://movixy.pages.dev',
+        git: 'https://github.com/LucasSouza210/Movixy'
+    },
+    {
+        name: '',
+        desc: '',
+        tech: [],
+        preview: '',
+        url: '',
+        git: '',
+        soon: true
+    },
+    {
+        name: '',
+        desc: '',
+        tech: [],
+        preview: '',
+        url: '',
+        git: '',
+        soon: true
     }
 ]
