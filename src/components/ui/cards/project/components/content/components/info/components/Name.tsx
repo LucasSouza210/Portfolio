@@ -5,7 +5,7 @@ export default function Name({ name, soon }: { name: string, soon: boolean | und
     const { line } = useTranslate()
 
     return (
-        <p className="text-lg font-medium tracking-wider leading-min text-title">
+        <p className="text-lg sm:text-xl md:text-[22px] lg:text-xs xl:text-sm 2xl:text-base font-medium tracking-wider leading-min text-title">
             {
                 soon ? line('comingSoon') : name
             }

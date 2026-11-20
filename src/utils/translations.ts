@@ -137,9 +137,9 @@ export const Translations = {
             es: 'Próximamente'
         },
         developmentDescription: {
-            pt: 'Estou preparando um novo projeto para integrar ao portfólio, com novidades e funcionalidades que serão apresentadas em breve. Volte em breve para conferir!',
-            en: 'I’m preparing a new project to add to my portfolio, featuring new ideas and features that will be revealed soon. Check back to see what’s coming!',
-            es: 'Estoy preparando un nuevo proyecto para añadir al portafolio, con novedades y funcionalidades que presentaré próximamente. ¡Vuelve pronto para descubrirlo!'
+            pt: 'Novo projeto em desenvolvimento para integrar ao portfólio, com novidades e funcionalidades que serão reveladas em breve. Volte para conferir!',
+            en: 'A new project is in development to join my portfolio, bringing new features and updates that will be revealed soon. Check back soon to see what’s coming!',
+            es: 'Nuevo proyecto en desarrollo para añadir al portafolio, con funciones y novedades que se revelarán próximamente. ¡Vuelve pronto para descubrirlo!'
         },
         inDevelopment: {
             pt: 'Em desenvolvimento',

@@ -3,7 +3,7 @@ import { projects } from "../../../utils/constants";
 
 export default function List() {
     return (
-        <div className="w-full flex flex-col lg:flex-row gap-5 sm:gap-6 md:gap-7 lg:gap-5">
+        <div className="w-full flex flex-col lg:flex-row gap-5 sm:gap-6 md:gap-7 lg:gap-5 xl:gap-5.5 2xl:gap-6">
             {
                 projects.map((i, index) => (
                     <Project project={i} key={index} />
