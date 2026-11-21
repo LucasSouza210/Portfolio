@@ -258,6 +258,16 @@ export const Translations = {
             en: 'Collaborative interface design tool for creating layouts, interactive prototypes, and design systems, helping organize and validate digital experiences.',
             es: 'Herramienta colaborativa de diseño de interfaces que permite crear diseños, prototipos interactivos y sistemas de diseño, facilitando la organización y validación de experiencias digitales.'
         },
+        expressDescription: {
+            pt: 'Framework para Node.js que simplifica a criação de servidores e APIs, oferecendo recursos para configurar rotas, processar requisições HTTP, aplicar middlewares e organizar a lógica de aplicações backend.',
+            en: 'Framework for Node.js that simplifies the development of servers and APIs, providing features for configuring routes, handling HTTP requests, applying middleware, and organizing backend application logic.',
+            es: 'Framework para Node.js que simplifica la creación de servidores y APIs, ofreciendo funciones para configurar rutas, procesar solicitudes HTTP, aplicar middlewares y organizar la lógica de aplicaciones backend.'
+        },
+        supabaseDescription: {
+            pt: 'Plataforma Backend as a Service baseada em PostgreSQL que oferece banco de dados, autenticação, armazenamento de arquivos e APIs integradas, permitindo desenvolver funcionalidades de backend sem precisar construir toda a infraestrutura do zero.',
+            en: 'PostgreSQL-based Backend as a Service platform that provides database management, authentication, file storage, and integrated APIs, allowing developers to build backend features without creating the entire infrastructure from scratch.',
+            es: 'Plataforma Backend as a Service basada en PostgreSQL que ofrece gestión de bases de datos, autenticación, almacenamiento de archivos y APIs integradas, permitiendo desarrollar funcionalidades backend sin construir toda la infraestructura desde cero.'
+        },
         languageCategory: {
             pt: 'Linguagem',
             en: 'Language',

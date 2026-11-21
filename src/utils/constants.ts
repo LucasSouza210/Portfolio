@@ -5,7 +5,7 @@ import { TbArrowsJoin, TbBrandGithub, TbBriefcase, TbCode, TbHeadset, TbHome, Tb
 import { FaInstagram } from "react-icons/fa";
 import { SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FiBookOpen, FiCheckCircle, FiFlag, FiMapPin, FiMessageCircle, FiShield, FiTrendingUp, FiUsers } from "react-icons/fi";
-import { JavaScript, TypeScript, MySQL, HTML5, CSS, React, ReactRouter, TailwindCSS, Nodejs, VisualStudioCode, Git, Vite, Figma } from "../assets/TechIcons"
+import { JavaScript, TypeScript, MySQL, HTML5, CSS, React, ReactRouter, TailwindCSS, Nodejs, VisualStudioCode, Git, Vite, Figma, Expressjs, Supabase } from "../assets/TechIcons"
 import BR from "../assets/flags/BR";
 import US from "../assets/flags/US";
 import SP from "../assets/flags/SP";
@@ -276,6 +276,14 @@ export const techs: Record<'front' | 'back' | 'tools', Tech[]> = {
             category: 'framework',
         },
         {
+            key: 'express',
+            name: 'Express.js',
+            icon: Expressjs,
+            link: 'https://expressjs.com/',
+            description: 'expressDescription',
+            category: 'framework',
+        },
+        {
             key: 'mysql',
             name: 'MySQL',
             icon: MySQL,
@@ -283,8 +291,15 @@ export const techs: Record<'front' | 'back' | 'tools', Tech[]> = {
             description: 'mysqlDescription',
             category: 'tool',
         },
-    ],
-    tools: [
+        {
+            key: 'supabase',
+            name: 'Supabase',
+            icon: Supabase,
+            link: 'https://supabase.com/',
+            description: 'supabaseDescription',
+            category: 'tool',
+        },
+    ], tools: [
         {
             key: 'vsc',
             name: 'VS Code',

@@ -29,12 +29,12 @@ export default function Description({ desc }: { desc: string }) {
 
     return (
         <div className="flex flex-col items-start">
-            <p ref={textRef} className={`text-xs font-medium tracking-wider leading-5 text-default ${expanded ? '' : 'line-clamp-3'}`}>
+            <p ref={textRef} className={`text-xs sm:text-[13px] md:text-sm lg:text-[10px] xl:text-[11px] 2xl:text-xs font-medium tracking-wider leading-5 sm:leading-5.5 md:leading-6 lg:leading-4.5 xl:leading-5 2xl:leading-5.5 text-default ${expanded ? '' : 'line-clamp-3'}`}>
                 {text}
             </p>
             {
                 truncated &&
-                <button type="button" aria-expanded={expanded} className="text-xs font-semibold tracking-wider leading-5 text-action-brand" onClick={() => setExpanded((current) => !current)}>
+                <button type="button" aria-expanded={expanded} className="text-xs sm:text-[13px] md:text-sm lg:text-[10px] xl:text-[11px] 2xl:text-xs font-semibold tracking-wider leading-5 sm:leading-5.5 md:leading-6 lg:leading-4.5 xl:leading-5 2xl:leading-5.5 text-action-brand" onClick={() => setExpanded((current) => !current)}>
                     {line(expanded ? "readLess" : "readMore")}
                 </button>
             }

@@ -3,7 +3,7 @@ import type { Tech } from "../../../../../../../../../../utils/constants"
 import Card from "./components/card/Card"
 import Dropdown from "./components/dropdown/Dropdown"
 
-export default function Skill({ skill, align }: { skill: Tech, align: 'start' | 'center' | 'end' }) {
+export default function Skill({ skill, align, column }: { skill: Tech, align: 'start' | 'center' | 'end', column: number }) {
 
     const { ref, open, toggle } = useDropdown()
 
@@ -12,7 +12,7 @@ export default function Skill({ skill, align }: { skill: Tech, align: 'start' | 
             <div className="flex justify-center">
                 <Card skill={skill} toggle={toggle} open={open} />
             </div>
-            <Dropdown open={open} align={align} skill={skill} />
+            <Dropdown open={open} align={align} column={column} skill={skill} />
         </div>
     )
 }
