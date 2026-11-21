@@ -33,7 +33,7 @@
 }
 
 @utility text-action-brand {
-    @apply cursor-pointer transition-all duration-200 ease-in-out text-[#695aad] hover:text-[#4f427d] active:text-[#4f427d] dark:text-[#8c85bd] dark:hover:text-[#a7a4c7] dark:active:text-[#a7a4c7];
+    @apply cursor-pointer transition-all duration-200 ease-in-out text-indigo-500 hover:text-indigo-600 active:text-indigo-600 dark:hover:text-indigo-400 dark:active:text-indigo-400;
 }
 
 @utility text-action-inverse {
@@ -96,6 +96,10 @@
     @apply border-zinc-300 hover:border-zinc-400/50 dark:border-zinc-800/70 dark:hover:border-zinc-700/50;
 }
 
+@utility border-active {
+    @apply border-zinc-400/90 dark:border-zinc-700/90
+}
+
 /* Actions */
 
 @utility action-default {
@@ -124,4 +128,8 @@
 
 @utility action-contrast {
     @apply cursor-pointer transition-all duration-200 ease-in-out bg-transparent hover:bg-zinc-500 active:bg-zinc-600 dark:hover:bg-zinc-300 dark:active:bg-zinc-200;
+}
+
+@utility action-active {
+    @apply cursor-pointer transition-all duration-200 ease-in-out bg-zinc-100 dark:bg-[#1a1a1d];
 }

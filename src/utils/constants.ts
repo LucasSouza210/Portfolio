@@ -50,6 +50,8 @@ export type Tech = {
     name: string
     icon: ComponentType<SVGProps<SVGSVGElement>>
     link: string
+    description: string
+    category: 'language' | 'library' | 'framework' | 'tool'
 }
 
 export type Project = {
@@ -60,6 +62,12 @@ export type Project = {
     url: string
     git: string
     soon?: boolean
+}
+
+export type SkillGroup = {
+    title: string
+    description: string
+    list: Tech[]
 }
 
 export const langOptions: { lang: Lang; label: string; flag: ComponentType<SVGProps<SVGSVGElement>> }[] = [
@@ -206,42 +214,56 @@ export const techs: Record<'front' | 'back' | 'tools', Tech[]> = {
             name: 'JavaScript',
             icon: JavaScript,
             link: 'https://tc39.es/ecma262/',
+            description: 'javascriptDescription',
+            category: 'language',
         },
         {
             key: 'ts',
             name: 'TypeScript',
             icon: TypeScript,
             link: 'https://www.typescriptlang.org/',
+            description: 'typescriptDescription',
+            category: 'language',
         },
         {
             key: 'react',
             name: 'React',
             icon: React,
             link: 'https://react.dev/',
+            description: 'reactDescription',
+            category: 'library',
         },
         {
             key: 'router',
             name: 'React Router',
             icon: ReactRouter,
             link: 'https://reactrouter.com/',
+            description: 'routerDescription',
+            category: 'library',
         },
         {
             key: 'tw',
             name: 'Tailwind CSS',
             icon: TailwindCSS,
             link: 'https://tailwindcss.com/',
+            description: 'tailwindDescription',
+            category: 'framework',
         },
         {
             key: 'html',
             name: 'HTML',
             icon: HTML5,
             link: 'https://html.spec.whatwg.org/',
+            description: 'htmlDescription',
+            category: 'language',
         },
         {
             key: 'css',
             name: 'CSS',
             icon: CSS,
             link: 'https://www.w3.org/Style/CSS/Overview.en.html',
+            description: 'cssDescription',
+            category: 'language',
         },
     ],
     back: [
@@ -250,12 +272,16 @@ export const techs: Record<'front' | 'back' | 'tools', Tech[]> = {
             name: 'Node.js',
             icon: Nodejs,
             link: 'https://nodejs.org/en',
+            description: 'nodeDescription',
+            category: 'framework',
         },
         {
             key: 'mysql',
             name: 'MySQL',
             icon: MySQL,
             link: 'https://www.mysql.com/',
+            description: 'mysqlDescription',
+            category: 'tool',
         },
     ],
     tools: [
@@ -264,24 +290,32 @@ export const techs: Record<'front' | 'back' | 'tools', Tech[]> = {
             name: 'VS Code',
             icon: VisualStudioCode,
             link: 'https://code.visualstudio.com/',
+            description: 'vscodeDescription',
+            category: 'tool',
         },
         {
             key: 'git',
             name: 'Git',
             icon: Git,
             link: 'https://git-scm.com/',
+            description: 'gitDescription',
+            category: 'tool',
         },
         {
             key: 'vite',
             name: 'Vite',
             icon: Vite,
             link: 'https://vite.dev/',
+            description: 'viteDescription',
+            category: 'tool',
         },
         {
             key: 'figma',
             name: 'Figma',
             icon: Figma,
             link: 'https://www.figma.com/',
+            description: 'figmaDescription',
+            category: 'tool',
         },
     ],
 }
@@ -313,4 +347,22 @@ export const projects: Project[] = [
         git: '',
         soon: true
     }
+]
+
+export const skillGroups: SkillGroup[] = [
+    {
+        title: 'frontendTitle',
+        description: 'frontendDescription',
+        list: techs.front,
+    },
+    {
+        title: 'backendTitle',
+        description: 'backendDescription',
+        list: techs.back,
+    },
+    {
+        title: 'toolsTitle',
+        description: 'toolsDescription',
+        list: techs.tools,
+    },
 ]

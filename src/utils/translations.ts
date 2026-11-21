@@ -153,6 +153,143 @@ export const Translations = {
             en: 'Technologies',
             es: 'Tecnologías'
         },
+        frontendTitle: {
+            pt: 'Frontend',
+            en: 'Frontend',
+            es: 'Frontend'
+        },
+        frontendDescription: {
+            pt: 'Tecnologias para criar interfaces modernas e responsivas.',
+            en: 'Technologies for building modern and responsive interfaces.',
+            es: 'Tecnologías para crear interfaces modernas y adaptables.'
+        },
+        languagesTitle: {
+            pt: 'Linguagens',
+            en: 'Languages',
+            es: 'Lenguajes'
+        },
+        frameworksTitle: {
+            pt: 'Bibliotecas e frameworks',
+            en: 'Libraries & Frameworks',
+            es: 'Bibliotecas y frameworks'
+        },
+        backendTitle: {
+            pt: 'Backend',
+            en: 'Backend',
+            es: 'Backend'
+        },
+        backendDescription: {
+            pt: 'Tecnologias para desenvolver a lógica e os dados das aplicações.',
+            en: 'Technologies for application logic and data management.',
+            es: 'Tecnologías para desarrollar la lógica y los datos de las aplicaciones.'
+        },
+        toolsTitle: {
+            pt: 'Ferramentas',
+            en: 'Tools',
+            es: 'Herramientas'
+        },
+        toolsDescription: {
+            pt: 'Ferramentas que apoiam o desenvolvimento de projetos.',
+            en: 'Tools that support project development.',
+            es: 'Herramientas que facilitan el desarrollo de proyectos.'
+        },
+        javascriptDescription: {
+            pt: 'Linguagem de programação utilizada para adicionar interatividade às páginas web, manipular elementos da interface e desenvolver aplicações tanto no navegador quanto no servidor.',
+            en: 'Programming language used to add interactivity to web pages, manipulate interface elements, and build applications for both browsers and servers.',
+            es: 'Lenguaje de programación utilizado para añadir interactividad a las páginas web, manipular elementos de la interfaz y desarrollar aplicaciones para navegadores y servidores.'
+        },
+        typescriptDescription: {
+            pt: 'Superset do JavaScript que adiciona tipagem estática e recursos avançados ao código, facilitando a identificação de erros e a manutenção de aplicações de diferentes tamanhos.',
+            en: 'JavaScript superset that adds static typing and advanced features, making it easier to detect errors and maintain applications of different sizes.',
+            es: 'Superset de JavaScript que añade tipado estático y funciones avanzadas, facilitando la detección de errores y el mantenimiento de aplicaciones de distintos tamaños.'
+        },
+        reactDescription: {
+            pt: 'Biblioteca JavaScript para construção de interfaces por meio de componentes reutilizáveis, permitindo organizar a aplicação em partes independentes e dinâmicas.',
+            en: 'JavaScript library for building interfaces with reusable components, allowing applications to be organized into independent and dynamic parts.',
+            es: 'Biblioteca de JavaScript para crear interfaces mediante componentes reutilizables, permitiendo organizar aplicaciones en partes independientes y dinámicas.'
+        },
+        routerDescription: {
+            pt: 'Biblioteca de roteamento para aplicações React que permite gerenciar páginas, navegação, parâmetros de URL e transições entre diferentes áreas da aplicação.',
+            en: 'Routing library for React applications that manages pages, navigation, URL parameters, and transitions between different areas of an application.',
+            es: 'Biblioteca de enrutamiento para aplicaciones React que permite gestionar páginas, navegación, parámetros de URL y transiciones entre distintas áreas.'
+        },
+        tailwindDescription: {
+            pt: 'Framework CSS baseado em classes utilitárias que permite estilizar interfaces diretamente no HTML, facilitando a criação de layouts responsivos e a manutenção dos estilos.',
+            en: 'Utility-first CSS framework that allows interfaces to be styled directly in HTML, making it easier to create responsive layouts and maintain styles.',
+            es: 'Framework CSS basado en clases utilitarias que permite diseñar interfaces directamente en HTML, facilitando la creación de diseños adaptables y el mantenimiento de estilos.'
+        },
+        htmlDescription: {
+            pt: 'Linguagem de marcação responsável por estruturar o conteúdo das páginas web, definindo elementos como títulos, textos, imagens, formulários e links.',
+            en: 'Markup language responsible for structuring web page content, defining elements such as headings, text, images, forms, and links.',
+            es: 'Lenguaje de marcado responsable de estructurar el contenido de las páginas web, definiendo elementos como títulos, textos, imágenes, formularios y enlaces.'
+        },
+        cssDescription: {
+            pt: 'Linguagem de estilos utilizada para controlar a apresentação visual das páginas web, permitindo definir cores, tipografia, espaçamentos, animações e layouts responsivos.',
+            en: 'Style sheet language used to control the visual presentation of web pages, defining colors, typography, spacing, animations, and responsive layouts.',
+            es: 'Lenguaje de estilos utilizado para controlar la presentación visual de las páginas web, permitiendo definir colores, tipografía, espaciados, animaciones y diseños adaptables.'
+        },
+        nodeDescription: {
+            pt: 'Ambiente de execução JavaScript baseado no mecanismo V8 que permite executar código fora do navegador, sendo utilizado principalmente para criar APIs, servidores e aplicações backend.',
+            en: 'JavaScript runtime environment powered by the V8 engine that executes code outside the browser, mainly used to build APIs, servers, and backend applications.',
+            es: 'Entorno de ejecución de JavaScript basado en el motor V8 que permite ejecutar código fuera del navegador, utilizado principalmente para crear APIs, servidores y aplicaciones backend.'
+        },
+        mysqlDescription: {
+            pt: 'Sistema de gerenciamento de banco de dados relacional que utiliza SQL para armazenar, consultar e organizar informações em tabelas relacionadas, garantindo consistência aos dados.',
+            en: 'Relational database management system that uses SQL to store, query, and organize information in related tables while maintaining data consistency.',
+            es: 'Sistema de gestión de bases de datos relacionales que utiliza SQL para almacenar, consultar y organizar información en tablas relacionadas, manteniendo la consistencia de los datos.'
+        },
+        vscodeDescription: {
+            pt: 'Editor de código-fonte desenvolvido para apoiar o fluxo de desenvolvimento, oferecendo recursos como IntelliSense, depuração, terminal integrado e suporte a extensões.',
+            en: 'Source code editor designed to support the development workflow, offering features such as IntelliSense, debugging, an integrated terminal, and extension support.',
+            es: 'Editor de código fuente diseñado para facilitar el desarrollo, ofreciendo funciones como IntelliSense, depuración, terminal integrado y compatibilidad con extensiones.'
+        },
+        gitDescription: {
+            pt: 'Sistema distribuído de controle de versão que registra alterações no código, permite criar ramificações de desenvolvimento e facilita o trabalho colaborativo entre desenvolvedores.',
+            en: 'Distributed version control system that tracks code changes, enables development branches, and facilitates collaboration between developers.',
+            es: 'Sistema distribuido de control de versiones que registra cambios en el código, permite crear ramas de desarrollo y facilita la colaboración entre desarrolladores.'
+        },
+        viteDescription: {
+            pt: 'Ferramenta de desenvolvimento e build que oferece inicialização rápida, atualização instantânea durante o desenvolvimento e otimização dos arquivos para publicação.',
+            en: 'Development and build tool that provides fast startup, instant updates during development, and optimized assets for production deployment.',
+            es: 'Herramienta de desarrollo y build que ofrece un inicio rápido, actualizaciones instantáneas durante el desarrollo y optimización de archivos para producción.'
+        },
+        figmaDescription: {
+            pt: 'Ferramenta colaborativa de design de interfaces que permite criar layouts, protótipos interativos e sistemas de design, facilitando a organização e a validação de experiências digitais.',
+            en: 'Collaborative interface design tool for creating layouts, interactive prototypes, and design systems, helping organize and validate digital experiences.',
+            es: 'Herramienta colaborativa de diseño de interfaces que permite crear diseños, prototipos interactivos y sistemas de diseño, facilitando la organización y validación de experiencias digitales.'
+        },
+        languageCategory: {
+            pt: 'Linguagem',
+            en: 'Language',
+            es: 'Lenguaje'
+        },
+        libraryCategory: {
+            pt: 'Biblioteca',
+            en: 'Library',
+            es: 'Biblioteca'
+        },
+        frameworkCategory: {
+            pt: 'Framework',
+            en: 'Framework',
+            es: 'Framework'
+        },
+        toolCategory: {
+            pt: 'Ferramenta',
+            en: 'Tool',
+            es: 'Herramienta'
+        },
+    },
+    general: {
+        readMore: {
+            pt: 'Ler mais',
+            en: 'Read more',
+            es: 'Leer más'
+        },
+        readLess: {
+            pt: 'Ler menos',
+            en: 'Read less',
+            es: 'Leer menos'
+        },
     },
     contact: {
         contactTitle: {
