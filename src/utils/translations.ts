@@ -360,6 +360,11 @@ export const Translations = {
             en: 'Send',
             es: 'Enviar'
         },
+        sendingButton: {
+            pt: 'Enviando...',
+            en: 'Sending...',
+            es: 'Enviando...',
+        },
     },
     general: {
         readMore: {
@@ -393,6 +398,16 @@ export const Translations = {
             pt: 'A mensagem é obrigatória',
             en: 'Message is required',
             es: 'El mensaje es obligatorio'
+        },
+        messageSent: {
+            pt: 'Mensagem enviada com sucesso!',
+            en: 'Message sent successfully!',
+            es: '¡Mensaje enviado correctamente!',
+        },
+        messageFailed: {
+            pt: 'Não foi possível enviar sua mensagem.',
+            en: 'Your message could not be sent.',
+            es: 'No se pudo enviar tu mensaje.',
         },
     },
     imageAlts: {
