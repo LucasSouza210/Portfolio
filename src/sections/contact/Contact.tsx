@@ -5,7 +5,7 @@ import MessageForm from "./components/message-form/MessageForm";
 export default function Contact() {
     return (
         <SectionContainer id="contact" title="contactTitle" lastSection>
-            <div className="flex-1 flex flex-col gap-8">
+            <div className="flex-1 flex flex-col lg:flex-row lg:justify-between gap-7 sm:gap-8 md:gap-9 lg:gap-0">
                 <Info />
                 <MessageForm />
             </div>
