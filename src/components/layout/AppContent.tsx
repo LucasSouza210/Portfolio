@@ -2,6 +2,7 @@ import Hero from "../../sections/hero/Hero";
 import About from "../../sections/about/About";
 import Projects from "../../sections/projects/Projects";
 import Skills from "../../sections/skills/Skills";
+import Contact from "../../sections/contact/Contact";
 
 export default function AppContent() {
     return (
@@ -10,6 +11,7 @@ export default function AppContent() {
             <About />
             <Projects />
             <Skills />
+            <Contact />
         </main>
     )
 }

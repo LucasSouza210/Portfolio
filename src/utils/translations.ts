@@ -289,30 +289,18 @@ export const Translations = {
             es: 'Herramienta'
         },
     },
-    general: {
-        readMore: {
-            pt: 'Ler mais',
-            en: 'Read more',
-            es: 'Leer más'
-        },
-        readLess: {
-            pt: 'Ler menos',
-            en: 'Read less',
-            es: 'Leer menos'
-        },
-    },
     contact: {
         contactTitle: {
             pt: 'Contato',
             en: 'Contact',
             es: 'Contacto'
         },
-        infoTitle: {
+        calloutTitle: {
             pt: 'Informações de contato',
             en: 'Contact Information',
             es: 'Información de contacto'
         },
-        infoText: {
+        calloutDescription: {
             pt: 'Tem um projeto em mente? Entre em contato e vamos conversar!',
             en: "Have a project in mind? Get in touch and let's talk!",
             es: '¿Tienes un proyecto en mente? ¡Ponte en contacto y hablemos!'
@@ -336,6 +324,11 @@ export const Translations = {
             pt: 'Entre em contato',
             en: 'Get in touch',
             es: 'Ponte en contacto'
+        },
+        formDescription: {
+            pt: 'Envie sua mensagem. Será um prazer conversar com você!',
+            en: 'Send me a message. I’d be happy to hear from you!',
+            es: 'Envíame un mensaje. ¡Será un placer hablar contigo!',
         },
         nameLabel: {
             pt: 'Nome',
@@ -366,6 +359,40 @@ export const Translations = {
             pt: 'Enviar',
             en: 'Send',
             es: 'Enviar'
+        },
+    },
+    general: {
+        readMore: {
+            pt: 'Ler mais',
+            en: 'Read more',
+            es: 'Leer más'
+        },
+        readLess: {
+            pt: 'Ler menos',
+            en: 'Read less',
+            es: 'Leer menos'
+        },
+    },
+    form: {
+        nameRequiredError: {
+            pt: 'O nome é obrigatório',
+            en: 'Name is required',
+            es: 'El nombre es obligatorio'
+        },
+        emailRequiredError: {
+            pt: 'O email é obrigatório',
+            en: 'Email is required',
+            es: 'El correo electrónico es obligatorio'
+        },
+        emailInvalidError: {
+            pt: 'Digite um email válido',
+            en: 'Enter a valid email',
+            es: 'Ingresa un correo electrónico válido'
+        },
+        messageRequiredError: {
+            pt: 'A mensagem é obrigatória',
+            en: 'Message is required',
+            es: 'El mensaje es obligatorio'
         },
     },
     imageAlts: {

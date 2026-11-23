@@ -5,6 +5,7 @@ import { TbArrowsJoin, TbBrandGithub, TbBriefcase, TbCode, TbHeadset, TbHome, Tb
 import { FaInstagram } from "react-icons/fa";
 import { SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FiBookOpen, FiCheckCircle, FiFlag, FiMapPin, FiMessageCircle, FiShield, FiTrendingUp, FiUsers } from "react-icons/fi";
+import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import { JavaScript, TypeScript, MySQL, HTML5, CSS, React, ReactRouter, TailwindCSS, Nodejs, VisualStudioCode, Git, Vite, Figma, Expressjs, Supabase } from "../assets/TechIcons"
 import BR from "../assets/flags/BR";
 import US from "../assets/flags/US";
@@ -68,6 +69,14 @@ export type SkillGroup = {
     title: string
     description: string
     list: Tech[]
+}
+
+export type SocialItem = {
+    label: string
+    info: string
+    url: string
+    icon: IconType
+    email?: boolean
 }
 
 export const langOptions: { lang: Lang; label: string; flag: ComponentType<SVGProps<SVGSVGElement>> }[] = [
@@ -379,5 +388,60 @@ export const skillGroups: SkillGroup[] = [
         title: 'toolsTitle',
         description: 'toolsDescription',
         list: techs.tools,
+    },
+]
+
+export const social: SocialItem[] = [
+    {
+        label: 'emailLabel',
+        info: 'lucassouzafigueiredo17@gmail.com',
+        url: 'lucassouzafigueiredo17@gmail.com',
+        icon: LuMail,
+        email: true
+    },
+    {
+        label: 'phoneLabel',
+        info: '(55) +88 9 8102-8865',
+        url: 'https://wa.me/558881028865?s=t',
+        icon: LuPhone
+    },
+    {
+        label: 'locationLabel',
+        info: 'Limoeiro do Norte, CE, Brasil',
+        url: 'https://maps.app.goo.gl/ZoHYMBvMhxssWqby7',
+        icon: LuMapPin
+    },
+]
+
+export const contactFields = [
+    {
+        name: "name" as const,
+        title: "nameLabel",
+        placeholder: "namePlaceholder",
+        rules: {
+            required: "nameRequiredError",
+        },
+    },
+    {
+        name: "email" as const,
+        title: "emailLabel",
+        placeholder: "emailPlaceholder",
+        rules: {
+            required: "emailRequiredError",
+            pattern: {
+                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: "emailInvalidError",
+            },
+        },
+    },
+    {
+        name: "message" as const,
+        title: "messageLabel",
+        placeholder: "messagePlaceholder",
+        maxLength: 500,
+        textarea: true,
+        rules: {
+            required: "messageRequiredError",
+        },
     },
 ]

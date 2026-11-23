@@ -3,7 +3,7 @@ import List from "./components/list/List";
 
 export default function Skills() {
     return (
-        <SectionContainer id="skills" title="skillsTitle" lastSection>
+        <SectionContainer id="skills" title="skillsTitle">
             <div className="flex-1 flex lg:items-center lg:justify-center">
                 <List />
             </div>
