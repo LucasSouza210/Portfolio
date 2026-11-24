@@ -6,6 +6,7 @@ import useOverlay from "./hooks/ui/useOverlay"
 import Header from "./components/layout/header/Header"
 import AppContent from "./components/layout/AppContent"
 import Overlay from "./components/layout/Overlay"
+import Footer from "./components/layout/footer/Footer"
 
 const scrollOptions: PartialOptions = {
   overflow: { x: "hidden" },
@@ -58,7 +59,10 @@ function AppLayout() {
         <div className="absolute inset-0">
           <OverlayScrollbarsComponent element="div" className="size-full bg-page" options={options} events={scrollEvents}>
             <Header />
-            <AppContent />
+            <div className="w-full flex flex-col">
+              <AppContent />
+              <Footer />
+            </div>
           </OverlayScrollbarsComponent>
         </div>
       </div>

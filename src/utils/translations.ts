@@ -26,6 +26,23 @@ export const Translations = {
             es: 'Contacto'
         },
     },
+    footer: {
+        footerDescription: {
+            pt: 'Desenvolvedor Frontend focado em interfaces modernas, responsivas e intuitivas.',
+            en: 'Frontend developer focused on modern, responsive, and intuitive interfaces.',
+            es: 'Desarrollador Frontend enfocado en interfaces modernas, adaptables e intuitivas.'
+        },
+        navigation: {
+            pt: 'Navegação',
+            en: 'Navigation',
+            es: 'Navegación'
+        },
+        copyRight: {
+            pt: 'Todos os direitos reservados.',
+            en: 'All rights reserved.',
+            es: 'Todos los derechos reservados.'
+        }
+    },
     hero: {
         greeting: {
             pt: 'Olá, eu sou',
