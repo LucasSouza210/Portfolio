@@ -7,7 +7,7 @@ export default function Copyright() {
     const year = new Date().getFullYear()
 
     return (
-        <p className="text-xs font-medium tracking-wider text-muted">
+        <p className="text-xs sm:text-sm md:text-base lg:text-[10px] 2xl:text-sm font-medium tracking-wider text-muted">
             {
                 `© ${year} Lucas Souza. ${line('copyRight')}`
             }

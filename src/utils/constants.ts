@@ -140,7 +140,7 @@ export const heroLinks = [
     },
     {
         icon: TbMail,
-        href: 'lucassouzafigueiredo17@gmail.com',
+        href: 'lucassouzaf21@gmail.com',
         label: 'emailLabel',
         email: true
     }
@@ -394,8 +394,8 @@ export const skillGroups: SkillGroup[] = [
 export const social: SocialItem[] = [
     {
         label: 'emailLabel',
-        info: 'lucassouzafigueiredo17@gmail.com',
-        url: 'lucassouzafigueiredo17@gmail.com',
+        info: 'lucassouzaf21@gmail.com',
+        url: 'lucassouzaf21@gmail.com',
         icon: LuMail,
         email: true
     },

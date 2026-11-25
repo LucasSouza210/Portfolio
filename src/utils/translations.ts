@@ -28,9 +28,9 @@ export const Translations = {
     },
     footer: {
         footerDescription: {
-            pt: 'Desenvolvedor Frontend focado em interfaces modernas, responsivas e intuitivas.',
-            en: 'Frontend developer focused on modern, responsive, and intuitive interfaces.',
-            es: 'Desarrollador Frontend enfocado en interfaces modernas, adaptables e intuitivas.'
+            pt: 'Desenvolvedor Frontend dedicado à criação\\d  de experiências digitais modernas, responsivas\\d e intuitivas. Vamos construir algo juntos?',
+            en: 'Frontend developer dedicated to creating\\d modern, responsive, and intuitive digital\\d experiences. Let’s build something together!',
+            es: 'Desarrollador Frontend dedicado a crear\\d experiencias digitales modernas, adaptables\\d e intuitivas. ¿Construimos algo juntos?'
         },
         navigation: {
             pt: 'Navegação',
