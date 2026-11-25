@@ -52,6 +52,15 @@ function AppLayout() {
     }
   }, [overlayOpen])
 
+  useEffect(() => {
+    const homePath = import.meta.env.BASE_URL
+    const { pathname, search, hash } = window.location
+
+    if (pathname !== homePath) {
+      window.history.replaceState(null, "", `${homePath}${search}${hash}`)
+    }
+  }, [])
+
   return (
     <div className="w-full h-dvh flex flex-col">
       <div className="relative flex-1">
