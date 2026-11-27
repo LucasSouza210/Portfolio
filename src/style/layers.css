@@ -13,7 +13,7 @@
 /* Typography */
 
 @utility text-title {
-    @apply text-black dark:text-white;
+    @apply text-zinc-700 dark:text-white;
 }
 
 @utility text-default {

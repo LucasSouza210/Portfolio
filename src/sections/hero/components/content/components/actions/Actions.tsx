@@ -3,7 +3,7 @@ import Contact from "./components/Contact";
 
 export default function Actions() {
     return (
-        <div className="flex gap-3 sm:gap-3.25 md:gap-3.5 lg:gap-2.5 xl:gap-3 2xl:gap-3.5">
+        <div className="flex gap-3 sm:gap-3.25 md:gap-3.5 lg:gap-2.5 xl:gap-2.75 2xl:gap-3">
             <Resume />
             <Contact />
         </div>
