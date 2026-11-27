@@ -6,12 +6,12 @@ export default function Content() {
     return (
         <div className="flex items-center lg:gap-4.5 xl:gap-5.25 2xl:gap-6">
             <Social />
-            <div className="flex flex-col items-center lg:items-start gap-6 sm:gap-6.5 md:gap-7 lg:gap-4 xl:gap-5 2xl:gap-6">
-                <div className="flex flex-col items-center gap-5 sm:gap-5.5 md:gap-6 lg:gap-0">
+            <div className="flex flex-col items-center gap-5 sm:gap-5.5 md:gap-6 lg:gap-4 xl:gap-5 2xl:gap-6">
+                <div className="flex flex-col items-center lg:items-start gap-4 sm:gap-4.5 md:gap-5 lg:gap-3.5 xl:gap-4.25 2xl:gap-5">
                     <Info />
-                    <Social mobile />
+                    <Actions />
                 </div>
-                <Actions />
+                <Social mobile />
             </div>
         </div>
     )

@@ -54,6 +54,16 @@ export const Translations = {
             en: 'Frontend Developer',
             es: 'Desarrollador Frontend'
         },
+        heroDescriptionMobile: {
+            pt: 'Desenvolvedor Frontend criando experiências web com interfaces modernas e código limpo.',
+            en: 'Frontend Developer building web experiences with modern interfaces and clean code.',
+            es: 'Desarrollador Frontend creando experiencias web con interfaces modernas y código limpio.'
+        },
+        heroDescription: {
+            pt: 'Desenvolvedor frontend criando interfaces\\d bem projetadas e código limpo.',
+            en: 'Frontend developer building thoughtfully\\d designed interfaces and clean code.',
+            es: 'Desarrollador frontend creando interfaces\\d bien diseñadas y código limpio.'
+        },
         resume: {
             pt: 'Currículo',
             en: 'Resume',
