@@ -7,7 +7,7 @@ export default function Close() {
 
     return (
         <button className="size-fit cursor-pointer text-action-muted" onClick={closeOverlay}>
-            <IoClose className="size-6 sm:size-6.5 md:size-7" />
+            <IoClose className="size-6 sm:size-7 md:size-8" />
         </button>
     )
 }

@@ -15,7 +15,7 @@ export default function Mode({ mobile }: { mobile?: boolean }) {
 
     return (
         <UtilityButton className={`aspect-square lg:aspect-auto ${mobile ? 'flex lg:hidden' : 'hidden lg:flex'}`} label={line(isLight ? 'ariaSwitchToDark' : 'ariaSwitchToLight')} onClick={toggleTheme}>
-            <Icon className="size-4 xl:size-4.5 2xl:size-5" />
+            <Icon className="size-1/2 lg:size-4 xl:size-4.5 2xl:size-5" />
         </UtilityButton>
     )
 }
