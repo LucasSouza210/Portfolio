@@ -164,9 +164,9 @@ export const Translations = {
             es: 'Próximamente'
         },
         developmentDescription: {
-            pt: 'Novo projeto em desenvolvimento para integrar ao portfólio, com novidades e funcionalidades que serão reveladas em breve. Volte para conferir!',
+            pt: 'Novo projeto em desenvolvimento para integrar ao portfólio, com novidades e funcionalidades que serão reveladas em breve. Volte logo para conferir o resultado!',
             en: 'A new project is in development to join my portfolio, bringing new features and updates that will be revealed soon. Check back soon to see what’s coming!',
-            es: 'Nuevo proyecto en desarrollo para añadir al portafolio, con funciones y novedades que se revelarán próximamente. ¡Vuelve pronto para descubrirlo!'
+            es: 'Nuevo proyecto en desarrollo para añadir al portafolio, con funciones y novedades que se revelarán próximamente. ¡Vuelve más adelante para descubrir lo que se viene!'
         },
         inDevelopment: {
             pt: 'Em desenvolvimento',
@@ -464,6 +464,16 @@ export const Translations = {
             pt: "Abrir menu",
             en: "Open menu",
             es: "Abrir menú"
+        },
+        ariaProjectRepository: {
+            pt: 'Ver repositório do projeto no GitHub',
+            en: 'View project repository on GitHub',
+            es: 'Ver repositorio del proyecto en GitHub'
+        },
+        ariaProjectWebsite: {
+            pt: 'Visitar o site do projeto',
+            en: 'Visit project website',
+            es: 'Visitar el sitio del proyecto'
         },
         instagramLabel: {
             pt: 'Instagram',

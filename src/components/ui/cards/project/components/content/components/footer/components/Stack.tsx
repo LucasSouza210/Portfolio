@@ -8,7 +8,7 @@ export default function Stack({ tech }: { tech: string[] }) {
 
                     const Icon = item.icon
 
-                    return <Icon className="size-5.5 sm:size-6.25 md:size-7 lg:size-4 xl:size-4.75 2xl:size-5.5" aria-label={item.name} key={index} />
+                    return <Icon className="size-6 sm:size-7 md:size-8 lg:size-4.5 xl:size-5.25 2xl:size-6" aria-label={item.name} key={index} />
                 })
             }
         </div>
