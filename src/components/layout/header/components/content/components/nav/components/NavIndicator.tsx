@@ -6,7 +6,7 @@ type Props = {
 
 export default function NavIndicator({ left, width, isAnimated }: Props) {
     return (
-        <span aria-hidden="true" className="absolute left-0 lg:-bottom-0.75 xl:-bottom-1 2xl:-bottom-1.25 lg:h-0.5 2xl:h-0.75 rounded-full will-change-transform bg-indigo-500"
+        <span aria-hidden="true" className="absolute left-0 lg:-bottom-2 xl:-bottom-2.25 2xl:-bottom-2.5 lg:h-0.5 2xl:h-0.75 rounded-full will-change-transform bg-indigo-500"
             style={{
                 transform: `translateX(${left}px)`,
                 width,

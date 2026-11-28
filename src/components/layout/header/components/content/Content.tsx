@@ -1,6 +1,5 @@
 import Nav from "./components/nav/Nav";
 import Actions from "./components/actions/Actions";
-import MenuButton from "./components/MenuButton";
 
 export default function Content() {
     return (
@@ -8,7 +7,6 @@ export default function Content() {
             <Nav />
             <span className="hidden lg:block w-px h-3/8 bg-border" />
             <Actions />
-            <MenuButton />
         </div>
     )
 }

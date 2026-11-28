@@ -5,7 +5,7 @@ export default function Title() {
     const { line } = useTranslate()
 
     return (
-        <p className="text-sm sm:text-base md:text-lg lg:text-[8px] xl:text-xs 2xl:text-xs font-medium tracking-[0.2em] uppercase text-muted">
+        <p className="text-sm sm:text-base md:text-lg lg:text-[10px] xl:text-xs 2xl:text-sm font-medium tracking-[0.2em] uppercase text-muted">
             {
                 line('navigation')
             }
